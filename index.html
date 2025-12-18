@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>豪猫备忘录 | Hao Mao Memo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'q-pink': '#FFB7B2',
+              'q-blue': '#A2E1DB',
+              'q-yellow': '#FDFD96',
+              'q-purple': '#C7CEEA',
+              'q-text': '#5D5C61',
+              'q-bg': '#F0F4F8',
+              'q-accent': '#FFD1DC',
+            },
+            borderRadius: {
+              'xl': '1rem',
+              '2xl': '1.5rem',
+              '3xl': '2rem',
+              '4xl': '3rem',
+              'bubble': '2.5rem',
+            },
+            fontFamily: {
+              'cute': ['"Comic Sans MS"', '"Chalkboard SE"', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              'q': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05)',
+              'q-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+              'soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+            },
+            keyframes: {
+              fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+              fadeInUp: { '0%': { opacity: '0', transform: 'translateY(15px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+              fadeOut: { '0%': { opacity: '1', transform: 'scale(1)' }, '100%': { opacity: '0', transform: 'scale(0.9)' } },
+              bounceIn: {
+                '0%': { opacity: '0', transform: 'scale(0.3)' },
+                '50%': { opacity: '1', transform: 'scale(1.08)' },
+                '70%': { transform: 'scale(0.95)' },
+                '100%': { transform: 'scale(1)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            },
+            animation: {
+              fadeIn: 'fadeIn 0.3s ease-out',
+              fadeInUp: 'fadeInUp 0.4s ease-out',
+              fadeOut: 'fadeOut 0.3s ease-in forwards',
+              bounceIn: 'bounceIn 0.6s cubic-bezier(0.36, 0, 0.66, -0.56)',
+              float: 'float 3s ease-in-out infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+      
+      body {
+        font-family: 'cute', 'ZCOOL KuaiLe', sans-serif;
+        background-color: #F7F9FC;
+        overflow-x: hidden;
+      }
+      
+      .q-glass {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      
+      /* Custom scrollbar */
+      
+      ::-webkit-scrollbar { width: 12px; }
+      
+      ::-webkit-scrollbar-track { background: #f0f2f5; border-radius: 10px; }
+      
+      ::-webkit-scrollbar-thumb { 
+        background: linear-gradient(180deg, #C7CEEA 0%, #FFB7B2 100%);
+        border-radius: 10px;
+        border: 3px solid #f0f2f5;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover { background: #A2E1DB; }
+      
+      .pudding-active {
+        transform: scale(0.95);
+      }
+      
+      .gradient-text {
+        background: linear-gradient(45deg, #FFB7B2, #C7CEEA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      /* Hide date picker calendar icon in some browsers to keep it clean */
+      
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-B_FSgA9D.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
